@@ -26,20 +26,11 @@ public class register extends AppCompatActivity {
     private FirebaseFirestore mfirestore;
 
 
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return false;
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        this.setTitle("Registro");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mfirestore = FirebaseFirestore.getInstance();
 
         btnRegistrar = findViewById(R.id.btnRegistrar);
