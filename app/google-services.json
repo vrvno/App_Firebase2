@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "290102529662",
+    "project_id": "conectamovil-d0555",
+    "storage_bucket": "conectamovil-d0555.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290102529662:android:75f94a3607ae34557ed22f",
+        "android_client_info": {
+          "package_name": "com.example.app_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX4HGNjGCZf5BAxi_cQQMHxW8tKy3Fixw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
