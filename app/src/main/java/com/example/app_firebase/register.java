@@ -57,9 +57,6 @@ public class register extends AppCompatActivity {
                 } else if (!isValidEmail(correo)) {
                     Toast.makeText(getApplicationContext(), "Correo electrónico no válido", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Los datos son válidos, procede con el registro
-                    // Puedes enviar los datos al servidor o realizar otras acciones aquí
-                    //Toast.makeText(getApplicationContext(),"funciono",Toast.LENGTH_SHORT).show();
                     crearUsuario(usuario,nombre,apellido,correo,contrasena);
                 }
             }

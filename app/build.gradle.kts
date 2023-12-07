@@ -24,6 +24,8 @@ android {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
+
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -31,9 +33,14 @@ android {
     }
 }
 
-dependencies {
 
-    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5'
+dependencies {
+    implementation ("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation ("org.eclipse.paho:org.eclipse.paho.android.service:1.1.1")
+    implementation ("org.eclipse.paho:org.eclipse.paho.client.android:1.1.1")
+    implementation ("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5")
+    implementation ("com.google.firebase:firebase-auth:18.0.0")
+    implementation ("com.google.android.gms:play-services-gcm:17.0.0")
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("androidx.appcompat:appcompat:1.6.1")

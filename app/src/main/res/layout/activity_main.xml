@@ -16,6 +16,7 @@
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,32 +27,57 @@
         android:layout_marginStart="41dp"
         android:layout_marginTop="135dp"
         android:layout_marginBottom="70dp"
-        app:layout_constraintBottom_toTopOf="@+id/etMensaje"
-        app:layout_constraintStart_toStartOf="@+id/etMensaje"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMessage"
+        app:layout_constraintStart_toStartOf="@+id/editTextMessage"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
-        android:id="@+id/etMensaje"
+        android:id="@+id/editTextMessage"
         android:layout_width="219dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="60dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="263dp"
+        android:layout_marginBottom="257dp"
         android:ems="10"
         android:hint="Envía un Mensaje"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/btnEnviarMensaje"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnEnviarMensaje"
+        android:id="@+id/btnSendMessage"
         android:layout_width="136dp"
         android:layout_height="55dp"
         android:layout_marginBottom="236dp"
+        android:onClick="sendMessage"
         android:text="Enviar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etMensaje" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextMessage" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="198dp"
+        android:text="MQTT Anónimo al cmd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMessage"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="100dp"
+        android:text="Cerrar Sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMessage" />
 </androidx.constraintlayout.widget.ConstraintLayout>
